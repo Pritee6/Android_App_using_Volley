@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/login_img"
+        android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:hint="EMAIL ADDRESS"
+                android:textColorHint="@color/white"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/white"
+                app:passwordToggleEnabled="true"
+                android:hint="PASSWORD"
+                android:textColor="@color/white"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btnsignin1"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/blue"
+                android:textSize="22dp"
+                android:background="@drawable/login_button_shape"
+                app:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
